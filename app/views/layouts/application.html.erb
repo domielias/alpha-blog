@@ -10,7 +10,12 @@
   </head>
 
   <body>
+    <%= render 'layouts/navigation' %>
     <%= render 'layouts/messages' %>
-    <%= yield %>
+    <%# Todo lo que se ponga aquí, se vera en todas las paginas %>
+    <div class="container">
+      <%= yield %>
+    </div>
+    <%= render 'layouts/footer' %>
   </body>
 </html>
