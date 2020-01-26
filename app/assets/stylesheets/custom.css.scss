@@ -37,7 +37,7 @@
     text-align: center;
   }
 
-  .jumbotron{
+  .center.jumbotron{
     background-image: asset-url('ee.jpg');
     background-size: cover;
     height: 550px;
@@ -54,6 +54,15 @@
     background-color: black;
   }
   
+  .article-actions{
+    border-top:1px solid #eaeaea;
+    padding-top: 5px ;
+  }
+
+  .center.description{
+    position: relative;
+    bottom: 30px;
+  }
 
   footer{
     margin-top: 45px;
