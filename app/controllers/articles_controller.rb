@@ -9,10 +9,12 @@ class ArticlesController < ApplicationController
   end
 
   def create
+    debugger
    # render plain: params[:article].inspect
    #  redirect_to article_path(@article)
    #  @article.save 
     @article=Article.new(article_params)
+    @article.user= User.first
     if @article.save
       #do something
       flash[:success] = 'Article was successfully created'
